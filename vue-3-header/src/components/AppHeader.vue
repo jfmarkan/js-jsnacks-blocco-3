@@ -2,7 +2,7 @@
     <div>
         <ul>
             <li v-for="link in navLinks">
-                {{link.text}}
+                <a href="">{{link.text}}</a>
             </li>
         </ul>
     </div>
@@ -10,6 +10,7 @@
 
 <script>
 export default {
+    name: 'AppHeader',
     data(){
         return{
             navLinks: [
@@ -35,6 +36,6 @@ export default {
 }
 </script>
 
-<style lang="">
-    
+<style lang="scss">
+
 </style>
