@@ -35,6 +35,10 @@ export default {
                     text: 'Login',
                     link: '#',
                 },
+                {
+                    text: 'Portfolio',
+                    link: '#',
+                },
             ]
         }
     }
