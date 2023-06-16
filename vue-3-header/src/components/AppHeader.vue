@@ -1,16 +1,21 @@
 <template>
     <div>
         <ul>
-            <li v-for="link in navLinks">
-                <a href="">{{link.text}}</a>
-            </li>
+            <NavigationLink v-for="navObj in navLinks"
+                :navigationElement= "navObj"
+            />
         </ul>
     </div>
 </template>
 
 <script>
+import NavigationLink from './NavigationLink.vue';
+
 export default {
     name: 'AppHeader',
+    components:{
+        NavigationLink
+    },
     data(){
         return{
             navLinks: [
